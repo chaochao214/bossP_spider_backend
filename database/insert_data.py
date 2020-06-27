@@ -61,11 +61,12 @@ def batch_insert(data):
                 db.commit()
             else:
                 print("3")
-                sql = 'insert into lagou(company,job,city,site,salary,url) values (%s,%s,%s,%s,%s,%s)'
+                sql = 'insert into lagou(company,job,city,site,salary,url,update_time,job_type) values (%s,%s,%s,%s,%s,%s,%s,%s)'
                 cursor.executemany(sql, x)
                 db.commit()
         print('数据导入成功')
-    except:
+    except Exception:
+        print("数据导入异常"+ Exception)
         db.rollback()
     db.close()
 

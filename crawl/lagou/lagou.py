@@ -85,6 +85,7 @@ def lagou_main(city, jobType):
     df = pd.DataFrame(columns=columns)
     nowtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     print(nowtime)
+    # 修改爬取量
     for i in range(1, 100):
         params = get_params(city, jobType, i)
         cookie = get_cookie(url_start, headers)
