@@ -1,0 +1,15 @@
+django 命令
+
+D:\iPyCharmWork\bossP\mysite>python  manage.py migrate
+D:\iPyCharmWork\bossP\mysite>pip install mysqlclient
+D:\iPyCharmWork\bossP\mysite> django-admin startproject mysite
+
+
+D:\iPyCharmWork\bossP\mysite>python manage.py runserver
+
+ 
+ 
+ #项目在linux中部署 
+ screen -r  bossP
+ python manage.py runserver 0.0.0.0:8000
+ ctrl a +d 
