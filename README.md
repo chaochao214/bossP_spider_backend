@@ -13,19 +13,19 @@ django 命令
 1.
 cd到bossP/mysite目录下
 1. 
-git clone /git pull 更新代码
+git clone /git pull 更新代码        
 2. migrate
-bossP\mysite> python  manage.py migrate
-3.安装mysqlclient
-bossP\mysite>pip install mysqlclient
-4.启动
-bossP\mysite> django-admin startproject mysite
-5.启动
-bossP\mysite>python manage.py runserver
+bossP\mysite> python  manage.py migrate   
+3.安装mysqlclient   
+bossP\mysite>pip install mysqlclient    
+4.启动   
+bossP\mysite> django-admin startproject mysite    
+5.启动    
+bossP\mysite>python manage.py runserver   
 
  
  
- #项目在linux中部署 、 开启screen
- screen -r  bossP
- python manage.py runserver 0.0.0.0:8000
- ctrl a +d 
+ #项目在linux中部署 、 开启screen          
+ screen -r  bossP       
+ python manage.py runserver 0.0.0.0:8000   
+ ctrl a +d   
