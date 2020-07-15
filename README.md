@@ -26,6 +26,9 @@ bossP\mysite>python manage.py runserver
  
  
  #项目在linux中部署 、 开启screen          
+ 新建窗口
+ screen -S 
+ 恢复窗口
  screen -r  bossP       
  python manage.py runserver 0.0.0.0:8000   
  ctrl a +d   
