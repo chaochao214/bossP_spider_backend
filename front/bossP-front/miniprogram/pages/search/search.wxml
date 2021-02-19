@@ -1,0 +1,35 @@
+    <view>
+    	<view class="form">
+    		<input class="searchInput" value='{{keyWord}}' bindconfirm='goSearch' placeholder="请输入搜索关键字" type="text" />
+    	</view>
+    	<!-- <view wx:for="{{items}}">
+    		<text style='display:block'>{{item.company}}</text>
+    	<view> -->
+    	<view wx:for="{{items}}" wx:key="item">
+    		<!-- <text style='display:block'>1111</text> -->
+    		<text style='display:block'>{{item.company}}</text>
+    		<text style='display:block'>{{item.job}}</text>
+    		<text style='display:block'>{{item.city}}</text>
+    		<text style='display:block'>{{item.salary}}</text>
+    		<text style='display:block'>{{item.url}}</text>
+    		<text style='display:block'>------------------</text>
+    	</view>
+    </view>
+
+    <!-- <view class="container">
+    	<view class="listBox" wx:for="{{items}}">
+    		<view class="listMain">
+    			 <navigator url='../videoShow/videoShow?id={{item.id}}'> -->
+    <!-- <image src="{{item.image}}" mode="widthFix"></image> -->
+    <!-- <view class='listTitle'>
+    				<view class="listSubtitle">
+    					<text>{{item.id}}</text>
+    				</view>
+    				<view class="listText">
+    					<text>{{item.company}}</text>
+    				</view>
+    			</view> -->
+    <!-- </navigator> -->
+    <!-- </view>
+    	</view>
+    </view>  -->

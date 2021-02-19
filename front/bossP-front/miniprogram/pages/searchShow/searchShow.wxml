@@ -1,0 +1,22 @@
+<!-- <view class="container">
+	<view class="listBox" wx:for="{{searchShow}}" wx:key="{{item.id}}">
+		<view class="listMain">
+			<navigator url='../videoShow/videoShow?id={{item.id}}'>
+				<image src="{{item.image}}" mode="widthFix"></image>
+				<view class='listTitle'>
+					<view class="listSubtitle">
+						<text>{{item.title}}</text>
+					</view>
+					<view class="listText">
+						<text>{{item.decription}}</text>
+					</view>
+				</view>
+			</navigator>
+		</view>
+	</view>
+</view> -->
+
+<view wx:for="{{items}}" wx:key="item">
+	<text style='display:block'>1111</text>
+	<text style='display:block'>{{item.company}}</text>
+</view>

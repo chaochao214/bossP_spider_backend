@@ -1,0 +1,41 @@
+<image class='img1' src='/images/tes1.jpg' bindtap='bindtest'></image>
+
+
+
+<button size="mini" type="default" bindtap="onAdd">新增活动</button>
+
+
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+        <view class="section__title">activity_name</view>
+        <input name="activity_name" placeholder="please input here" />
+    </view>
+    <view class="section">
+        <view class="section__title">activity_name2</view>
+        <input name="activity_name2" placeholder="please input here" />
+    </view>
+ 
+
+
+
+    <view class="section section_gap">
+        <view class="section__title">switch</view>
+        <switch name="switch" />
+    </view>
+
+    <view class="section section_gap">
+        <view class="section__title">switch2</view>
+        <switch name="switch2" />
+    </view>
+
+
+    <view class="btn-area">
+        <button formType="submit">Submit</button>
+        <button formType="reset">Reset</button>
+    </view>
+</form>
+
+<button size="mini" type="default" bindtap="onQuery">查询活动</button>
+<text class="code" wx:if="{{queryResult}}">{{queryResult}}</text>

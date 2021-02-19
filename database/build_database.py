@@ -24,14 +24,14 @@ def connect_db():
     :return: 自动连接数据库
     """
     host = 'localhost'
-    # host = '47.105.86.106'
+    # host = 'twc'
     # port = 33306
     user = 'root'
     password = 'root'
     # password = '123456'
     db = 'bossP'
     # db = pymysql.connect(host, user, password, db)
-    db = pymysql.connect("47.105.86.106", "root", "123456", "bossP", port=33306, charset='utf8')
+    db = pymysql.connect("twc", "root", "123456", "bossP", port=33306, charset='utf8')
     return db
 
 
