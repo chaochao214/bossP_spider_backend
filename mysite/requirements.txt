@@ -9,7 +9,7 @@ cryptography==2.9.2
 Django==3.0.14
 dnspython==1.16.0
 idna==2.9
-lxml==4.6.2
+lxml==4.6.3
 mysql==0.0.2
 mysql-connector-python==8.0.19
 mysqlclient==1.4.6
